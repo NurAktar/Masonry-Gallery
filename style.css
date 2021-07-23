@@ -10,10 +10,7 @@ body{
   min-height: 100vh;
   min-width: 100vw;
 }
-#sec1{
-  z-index: -9;
-  height: 100vh;
-}
+
 .bg-animation{
   position:absolute;
   z-index: -3;
@@ -185,6 +182,25 @@ nav img{
 .image_box:hover img{
   filter: grayscale(0);
   transform: scale(1.1);
+}
+
+
+
+.footer{
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  width: 95vw;
+  margin: auto;
+  text-align:center;
+  color: white;
+  align-items: center;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: inline-block;
+  background: rgba(122, 96, 7, 0.55);
 }
 
 
