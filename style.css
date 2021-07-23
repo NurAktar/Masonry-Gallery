@@ -18,7 +18,7 @@ body{
   position:absolute;
   z-index: -3;
   background:rgb(147, 184, 0);
-  background-image: url(https://source.unsplash.com/1600x900/?minimal);
+  background-image: url(https://source.unsplash.com/1600x900/?nature);
   background-size: cover;
   /* animation: moving 85s linear infinite; */
   min-height: 100vh;
