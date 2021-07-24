@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta property="og:image" content="image/logo.jpg">
+  <meta property="og:image" content="image/unnamed.png">
   <meta name="viewport" content="width=device-width initial-scale=1">
   <meta charset="UTF-8">
   <title>Picasus Gallery</title>
@@ -13,9 +13,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
-  <!-- bootstrap cdn -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body >
@@ -23,20 +20,18 @@
     <span id="spanloading">Picasus Gallery</span>
     <span id="spanloading2">Loading...</span>
   </div>
+
   <section>
-
-
-  <div class="bg-animation"></div>
+  <div class="bg-pic"></div>
 
     <nav>
-      <a href='unlock%20link.html'><img src="image/unnamed.png" alt="no img"></a>
-      <span><a href="unlock%20link.html">Picasus Gallery</a></span>
+      <a href='#'><img src="image/unnamed.png" alt="no img"></a>
+      <span><a href="">Picasus Gallery</a></span>
       <div class="nav-link" id="navLink">
-        <!-- <i class="fas fa-times-circle" onclick="hidemenu()"></i> -->
         <ul id="navlist">
           <li><a href="#">Home</a></li>
-          <li><a href="sign-in.html">Sign In</a></li>
-          <li><a href="about_us.html">About</a></li>
+          <li><a href="#">section1</a></li>
+          <li><a href="#">About Me</a></li>
         </ul>
       </div>
       <div class="BURGER" id="burger" onclick="menubtn()">
@@ -44,8 +39,8 @@
         <div class="line2"></div>
         <div class="line3"></div>
       </div>
-      <!-- <i class="fas fa-bars" onclick="showmenu()"></i> -->
     </nav>
+
   <section>
     <div class="container">
       <div class="box">
@@ -102,30 +97,27 @@
   </section>
 <div class="footer">
   Nur Aktar
-
 </div>
   </section>
 
     <!-- all scripts starts here -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+    <!-- my js scripts here -->
     <script>
     $("#loader").delay(1500);
     $(window).on("load",function(){
       $("#loader").fadeOut("slow");
     })
-
     //hide menu and show menu
     var navLink = document.getElementById("navLink");
-
     // burger toggle // menubar
     var burger = document.getElementById("burger");
     function menubtn(){
       navLink.classList.toggle('panal');
       burger.classList.toggle('toggle');
-
     }
-
+    //auto hide menu on start
     $(function(){setTimeout(function () {
       navLink.classList.toggle('panal');
     }, 3500);});
