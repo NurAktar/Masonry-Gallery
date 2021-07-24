@@ -22,13 +22,25 @@ body{
   min-width: 100vw;
 }
 #spanloading{
-  font-family: 'Lobster', cursive;
+  font-family: 'Poppins', cursive;
   font-size: 25px;
   display:inline-block;
   background-color: white;
   color: black;
   position: absolute;
   top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#spanloading2{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 25px;
+  display:inline-block;
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
