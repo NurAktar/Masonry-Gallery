@@ -41,14 +41,14 @@ body{
   background-color: white;
   color: black;
   position: absolute;
-  bottom: 10px;
+  bottom: 55px;
   right: 0;
   transform: translate(-50%, -50%);
   text-align: center;
 }
 
 #loader{
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   /* background: #211f25 url("image/coffiecup.gif") no-repeat center; */ /*written html body*/
