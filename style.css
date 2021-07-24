@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing:border-box;
+  transition: 1s;
 }
 html{
   overflow: hidden;
@@ -98,7 +99,7 @@ nav img{
 .nav-link ul li a{
   color: aliceblue;
   text-decoration: none;
-  font-weight:  bold;
+  font-weight: bold;
   font-size: 17px;
 }
 
@@ -230,7 +231,6 @@ nav img{
   }
   nav{
     height: 71px;
-    /* background-color: black; */
   }
   nav:hover{
     border-radius: 0;
@@ -246,7 +246,6 @@ nav img{
     font-size: 23px;
   }
   .nav-link{
-    /* background-color: black; */
     z-index: 1;
     position: absolute;
     display: block;
@@ -258,6 +257,7 @@ nav img{
     text-align: left;
     padding: 22px;
   }
+
   .panal{
     opacity: 0;
     right: -51%;

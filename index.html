@@ -16,10 +16,10 @@
 </head>
 
 <body >
-  <!-- <div style=" background: #ffffff url('image/Plant.gif') no-repeat center;" id="loader">
+  <div style=" background: #ffffff url('image/Plant.gif') no-repeat center;" id="loader">
     <span id="spanloading">Picasus Gallery</span>
     <span id="spanloading2">Loading...</span>
-  </div> -->
+  </div>
 
   <section>
   <div class="bg-pic"></div>
@@ -102,13 +102,12 @@
 
     <!-- all scripts starts here -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
     <!-- my js scripts here -->
     <script>
     $("#loader").delay(1500);
     $(window).on("load",function(){
-      $("#loader").fadeOut("slow");
-    })
+      $("#loader").fadeOut("slow");})
     //hide menu and show menu
     var navLink = document.getElementById("navLink");
     // burger toggle // menubar
@@ -121,6 +120,7 @@
     $(function(){setTimeout(function () {
       navLink.classList.toggle('panal');
     }, 3500);});
+
     </script>
   </body>
   </html>
