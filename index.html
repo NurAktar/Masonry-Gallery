@@ -103,35 +103,16 @@
 
     <!-- all scripts starts here -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js">
-
-
-    </script>
+    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
     <script>
     $("#loader").delay(1500);
     $(window).on("load",function(){
       $("#loader").fadeOut("slow");
     })
-    // var loader = document.getElementById('loader');
-    // function loaded(){
-    //   loader.style.display = 'none';
-    // }
+
     //hide menu and show menu
     var navLink = document.getElementById("navLink");
-    // function showmenu(){ navLink.style.right = "0"; }
-    // function hidemenu(){ navLink.style.right = "-51%"; }
 
-    var btn = document.getElementById('btn');
-    var btn2 = document.getElementById('btn2');
-
-    btn.onclick = function(){
-      window.open('https://www.youtube.com/channel/UCGFFUcAJp7d8crRm7k-WmHw?sub_confirmation=1','_blank');
-      setTimeout(function(){
-        btn2.disabled=false;
-        btn2.style.background="rgb(11, 159, 11)";
-        btn2.style.cursor="pointer";
-      },11000);
-    }
     // burger toggle // menubar
     var burger = document.getElementById("burger");
     function menubtn(){
@@ -140,14 +121,9 @@
 
     }
 
-
-
     $(function(){setTimeout(function () {
       navLink.classList.toggle('panal');
     }, 3500);});
-
-
-
     </script>
   </body>
   </html>

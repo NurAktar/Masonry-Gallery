@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-
+  transition: 1s;
   box-sizing:border-box;
 }
 
@@ -53,21 +53,15 @@ nav{
   padding: 0.7% 8%;
   justify-content: space-between;
   align-items: center;
-  background-color: ;
   transition: 0.5s;
 }
-@media screen and ( max-height:700px ){
-  nav{
-    background-color: black;
-  }
 
-}
+
 nav:hover{
   border-radius: 15px;
   margin:0 5% 0 5%;
   background-color: rgba(255, 255, 255, 0.18);
   padding: 0.7% 3%;
-  /* box-shadow: 0 0 13px black; */
 }
 nav span{
   font-weight:500;
@@ -78,15 +72,6 @@ nav span a{
   text-decoration: none;
   color: aliceblue;
 }
-
-/* nav .fas{
-  font-size: 30px;
-  position: relative;
-  top:16px;
-  right: 0;
-  margin: 0 0 33px 10px;
-  color: white;
-} */
 
 
 
@@ -203,17 +188,6 @@ nav img{
   background: rgba(122, 96, 7, 0.55);
 }
 
-
-
-
-
-
-/* div form h1{
-  color: aliceblue;
-  font-family: monospace;
-  font-size: 45px;
-
-} */
 .BURGER{
   display: none;
 }
@@ -235,15 +209,37 @@ nav img{
     background-color: yellow;
   transform: rotate(-45deg) translate(4px,-7px);
 }
-
+@media screen and (max-width:830px){
+  .box{
+    width: 140px;
+    height: 100px;
+    margin: 9px auto;
+    display: inline-block;
+  }
+  .image_box img{
+    width: 140px;
+    height: 100px;
+  }
+}
+@media screen and (max-height:650px){
+  nav{
+    background-color: black;
+  }
+}
 @media screen and (max-width: 700px){
   .BURGER{
     display:block;
   }
   nav{
     height: 71px;
+    /* background-color: black; */
   }
-
+  nav:hover{
+    border-radius: 0;
+    margin:0 ;
+    background-color: rgba(0, 0, 0, 0.64);
+    padding: 0.7% 8%;
+  }
   .nav-link ul li{
     display:block;
     padding-top: 25px;
@@ -252,6 +248,7 @@ nav img{
     font-size: 23px;
   }
   .nav-link{
+    /* background-color: black; */
     z-index: 1;
     position: absolute;
     display: block;
